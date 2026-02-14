@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Student Form</title>
+        <link rel="stylesheet" href="studentStyle.css">
+    </head>
+    <body>
+        <div class="form-container">
+            <h2>Student Registration Form</h2>
+            <form id="studentForm" onsubmit="return validateForm()">
+                <input type="text" id="firstName" placeholder="First Name" required>
+                <input type="text" id="middleName" placeholder="Middle Name">
+                <input type="text" id="lastName" placeholder="Last Name" required>
+                <label>Date of Birth</label>
+                <input type="date" id="dob" required>
+                <input type="text" id="education" placeholder="Education" required>
+                <textarea id="address" placeholder="Address"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <script src="studentScript.js"></script>
+        </div>
+    </body>
+</html>

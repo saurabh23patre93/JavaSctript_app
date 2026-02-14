@@ -27,3 +27,39 @@ addEventListener("submit", function(event) {
         console.error("Error:", error);
     });
 });
+
+function validateForm() {
+    let firstName = document.getElementById("firstName").value;
+    let middleName = document.getElementById("middleName").value;
+    let lastName = document.getElementById("lastName").value;
+    let dob = document.getElementById("dob").value;
+    let education = document.getElementById("education").value;
+    let address = document.getElementById("address").value;
+    if(firstName === "") {
+        alert("Name must be filled out");
+        return false;
+    }
+    if(middleName === "") {
+        alert("Middle Name must be filled out");
+        return false;
+    }
+    if(lastName === "") {
+        alert("Last Name must be filled out");
+        return false;
+    }
+    if(dob === "") {
+        alert("Date of Birth must be filled out");
+        return false;
+    }
+    if(education === "") {
+        alert("Education must be filled out");
+        return false;
+    }   
+    if(address === "") {
+        alert("Address must be filled out");
+        return false;
+    }
+    alert("Form submitted successfully!");
+    return true;   
+
+}
